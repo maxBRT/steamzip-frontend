@@ -1,0 +1,60 @@
+.d5-signup {
+    padding: 2rem 3rem;
+    background: var(--sz-black);
+    position: relative;
+    animation: d5-reveal 0.4s 0.2s ease both;
+}
+
+.d5-signup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 1.25rem;
+    gap: 2rem;
+}
+
+.d5-signup-heading {
+    font-family: var(--sz-font-display);
+    font-weight: 800;
+    font-size: 1.5rem;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--sz-white);
+    line-height: 1;
+}
+
+.d5-signup-heading span {
+    color: var(--sz-red);
+}
+
+.d5-signup-note {
+    font-size: 1rem;
+    letter-spacing: 0.15em;
+    color: #444;
+    text-align: right;
+    line-height: 1.6;
+    max-width: 200px;
+    flex-shrink: 0;
+}
+
+
+.d5-signup-note span {
+    color: var(--sz-red);
+}
+
+@media (max-width: 768px) {
+    .d5-signup {
+        padding: 1.5rem;
+    }
+
+    .d5-signup-header {
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .d5-signup-note {
+        text-align: left;
+        max-width: none;
+    }
+}

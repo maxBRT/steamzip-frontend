@@ -1,0 +1,81 @@
+.d5-red-block {
+    background: var(--sz-red);
+    padding: 4rem 3rem 3rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    overflow: hidden;
+    min-height: 55vh;
+    animation: d5-reveal 0.5s ease both;
+}
+
+.d5-red-block::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.06) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 0, 0, 0.06) 1px, transparent 1px);
+    background-size: 48px 48px;
+}
+
+.d5-red-num {
+    font-family: var(--sz-font-display);
+    font-weight: 900;
+    font-size: clamp(120px, 20vw, 260px);
+    line-height: 0.85;
+    color: rgba(0, 0, 0, 0.12);
+    position: absolute;
+    top: 1rem;
+    left: -0.04em;
+    letter-spacing: -0.05em;
+    user-select: none;
+}
+
+.d5-red-content {
+    position: relative;
+    z-index: 1;
+}
+
+.d5-red-tag {
+    display: inline-block;
+    border: 1.5px solid rgba(255, 255, 255, 0.4);
+    padding: 0.3rem 0.75rem;
+    font-size: 1rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+}
+
+.d5-red-headline {
+    font-family: var(--sz-font-display);
+    font-weight: 900;
+    font-size: 8rem;
+    line-height: 0.92;
+    letter-spacing: -0.01em;
+    color: var(--sz-white);
+    text-transform: uppercase;
+}
+
+.d5-red-headline em {
+    font-style: italic;
+    font-weight: 300;
+    display: block;
+    font-size: 0.6em;
+    letter-spacing: 0.02em;
+}
+
+@media (max-width: 768px) {
+    .d5-red-block {
+        padding: 2.5rem 1.5rem 2rem;
+        min-height: 42vh;
+    }
+
+    .d5-red-headline {
+        font-size: 5rem;
+    }
+}

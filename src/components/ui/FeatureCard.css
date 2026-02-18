@@ -1,0 +1,73 @@
+.d5-feat {
+    padding: 0 2rem 3rem 0;
+    border-bottom: 1.5px solid #E0E0E0;
+    margin-bottom: 2.5rem;
+}
+
+.d5-feat:nth-child(2n) {
+    padding-left: 2rem;
+    padding-right: 0;
+    border-left: 1.5px solid #E0E0E0;
+}
+
+.d5-feat:nth-last-child(-n+2) {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.d5-feat-num {
+    font-family: var(--sz-font-display);
+    font-weight: 900;
+    font-size: 3.5rem;
+    line-height: 1;
+    color: #E0E0E0;
+    margin-bottom: 0.5rem;
+    display: block;
+    letter-spacing: -0.03em;
+}
+
+.d5-feat-title {
+    font-family: var(--sz-font-display);
+    font-weight: 700;
+    font-size: 1.2rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--sz-black);
+    margin-bottom: 0.5rem;
+}
+
+.d5-feat-desc {
+    font-family: var(--sz-font-body);
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666;
+}
+
+.d5-feat-desc strong {
+    color: var(--sz-red);
+    font-weight: 400;
+}
+
+@media (max-width: 768px) {
+    .d5-feat {
+        padding: 0 0 1.5rem 0;
+        margin-bottom: 1.5rem;
+    }
+
+    .d5-feat:nth-child(2n) {
+        padding-left: 0;
+        border-left: none;
+    }
+
+    /* Restore borders that desktop hides for last-2 cards */
+    .d5-feat:nth-last-child(-n+2) {
+        border-bottom: 1.5px solid #E0E0E0;
+        margin-bottom: 1.5rem;
+    }
+
+    .d5-feat:last-child {
+        border-bottom: none;
+        margin-bottom: 0;
+    }
+}

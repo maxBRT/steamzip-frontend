@@ -1,0 +1,36 @@
+.d5-left {
+    border-right: var(--sz-border);
+    display: flex;
+    flex-direction: column;
+}
+
+.d5-left-bottom {
+    padding: 2.5rem 3rem;
+    border-top: var(--sz-border);
+}
+
+.d5-tagline {
+    font-family: var(--sz-font-body);
+    font-weight: 300;
+    font-style: italic;
+    font-size: 1.5rem;
+    line-height: 1.65;
+    color: #444;
+    max-width: 380px;
+}
+
+@media (max-width: 768px) {
+    .d5-left {
+        border-right: none;
+        border-bottom: var(--sz-border);
+    }
+
+    .d5-left-bottom {
+        padding: 1.5rem;
+    }
+
+    .d5-tagline {
+        font-size: 1.25rem;
+        max-width: 100%;
+    }
+}

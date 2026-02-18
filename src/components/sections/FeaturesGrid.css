@@ -1,0 +1,15 @@
+.d5-right-top {
+    padding: 2rem 3rem 1.8rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    align-content: start;
+    animation: d5-reveal 0.5s 0.1s ease both;
+}
+
+@media (max-width: 768px) {
+    .d5-right-top {
+        grid-template-columns: 1fr;
+        padding: 1.5rem;
+    }
+}

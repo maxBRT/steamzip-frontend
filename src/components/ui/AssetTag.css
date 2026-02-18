@@ -1,0 +1,16 @@
+.d5-asset-tag {
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    padding: 0.2rem 0.8rem;
+    color: #888;
+}
+
+.d5-asset-tag+.d5-asset-tag {
+    border-left: 1px solid #DDD;
+}
+
+.d5-asset-tag.red {
+    color: var(--sz-red);
+}

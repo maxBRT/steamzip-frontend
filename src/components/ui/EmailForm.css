@@ -1,0 +1,75 @@
+.d5-form {
+    display: flex;
+    border: 1.5px solid #2a2a2a;
+    background: #111;
+    transition: border-color 0.2s;
+}
+
+.d5-form:focus-within {
+    border-color: var(--sz-red);
+}
+
+.d5-input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    padding: 0.9rem 1.25rem;
+    color: var(--sz-white);
+    font-family: var(--sz-font-display);
+    font-size: 0.85rem;
+    letter-spacing: 0.1em;
+    outline: none;
+    min-width: 0;
+}
+
+.d5-input::placeholder {
+    color: #333;
+}
+
+.d5-submit-btn {
+    background: var(--sz-red);
+    color: var(--sz-white);
+    border: none;
+    padding: 0.9rem 1.75rem;
+    font-family: var(--sz-font-display);
+    font-size: 1rem;
+    font-weight: 800;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.15s;
+    flex-shrink: 0;
+}
+
+.d5-submit-btn:hover {
+    background: #FF2200;
+}
+
+.d5-form-sub {
+    margin-top: 0.6rem;
+    font-size: 0.8rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #333;
+}
+
+.d5-success {
+    border: 1.5px solid var(--sz-red);
+    padding: 1.25rem;
+    background: rgba(227, 27, 0, 0.06);
+}
+
+.d5-success-head {
+    font-size: 1.1rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--sz-red);
+    margin-bottom: 0.3rem;
+}
+
+.d5-success-body {
+    font-size: 0.75rem;
+    color: #666;
+    letter-spacing: 0.08em;
+}

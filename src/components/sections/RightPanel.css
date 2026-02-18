@@ -1,0 +1,4 @@
+.d5-right {
+  display: grid;
+  grid-template-rows: 1fr auto auto;
+}

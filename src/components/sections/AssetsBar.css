@@ -1,0 +1,15 @@
+.d5-assets-bar {
+    border-top: var(--sz-border);
+    border-bottom: var(--sz-border);
+    padding: 0.85rem 3rem;
+    display: flex;
+    gap: 0;
+    flex-wrap: wrap;
+    background: #F5F5F5;
+}
+
+@media (max-width: 768px) {
+    .d5-assets-bar {
+        padding: 0.85rem 1.5rem;
+    }
+}
