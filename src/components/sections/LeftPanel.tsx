@@ -7,7 +7,7 @@ export function LeftPanel() {
             <HeroBlock />
             <div className="d5-left-bottom">
                 <p className="d5-tagline">
-                    One high-resolution image. A complete, launch-ready suite of Steam Store assets generated in sixty seconds.
+                    Steam requires 8 images with exact pixel dimensions. Upload your art once and get every asset, perfectly cropped, in 60 seconds.
                 </p>
             </div>
         </div>

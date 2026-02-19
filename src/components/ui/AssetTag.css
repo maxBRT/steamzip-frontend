@@ -5,6 +5,16 @@
     text-transform: uppercase;
     padding: 0.2rem 0.8rem;
     color: #888;
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+}
+
+.d5-asset-tag-dim {
+    font-size: 0.75rem;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    color: #DDD;
 }
 
 .d5-asset-tag+.d5-asset-tag {
