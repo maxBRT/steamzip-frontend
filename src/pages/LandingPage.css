@@ -1,11 +1,25 @@
-.d5-main {
+.d5-top {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    min-height: calc(100vh - 56px);
+}
+
+.d5-bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.d5-bottom-left {
+    border-right: var(--sz-border);
+    padding: 2.5rem 3rem;
 }
 
 @media (max-width: 768px) {
-    .d5-main {
+    .d5-top,
+    .d5-bottom {
         grid-template-columns: 1fr;
+    }
+
+    .d5-bottom-left {
+        display: none;
     }
 }

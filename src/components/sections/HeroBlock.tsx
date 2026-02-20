@@ -5,7 +5,10 @@ export function HeroBlock() {
         <div className="d5-red-block">
             <div className="d5-red-num">SZ</div>
             <div className="d5-red-content">
-                <div className="d5-red-tag">Launching Soon</div>
+                <div className="d5-red-tags">
+                    <div className="d5-red-tag">One $9 Payment</div>
+                    <div className="d5-red-tag highlight">No Subscription</div>
+                </div>
                 <h1 className="d5-red-headline">
                     Steam
                     <em>Asset</em>

@@ -63,7 +63,7 @@ export function EmailForm() {
                         required
                     />
                     <button className="d5-submit-btn" type="submit" disabled={status === 'loading'}>
-                        {status === 'loading' ? '...' : '→ Register'}
+                        {status === 'loading' ? '...' : 'Join Waitlist'}
                     </button>
                 </div>
             </form>

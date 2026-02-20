@@ -1,6 +1,8 @@
 import { SiteHeader } from '../components/sections/SiteHeader';
 import { LeftPanel } from '../components/sections/LeftPanel';
-import { RightPanel } from '../components/sections/RightPanel';
+import { FeaturesGrid } from '../components/sections/FeaturesGrid';
+import { AssetsMarquee } from '../components/sections/AssetsMarquee';
+import { WaitlistSection } from '../components/sections/WaitlistSection';
 import { SiteFooter } from '../components/sections/SiteFooter';
 import './LandingPage.css';
 
@@ -8,11 +10,20 @@ export default function LandingPage() {
     return (
         <div className="d5">
             <SiteHeader />
-            <div className="d5-main">
+            <div className="d5-top">
                 <LeftPanel />
-                <RightPanel />
-                <SiteFooter />
+                <FeaturesGrid />
             </div>
+            <AssetsMarquee />
+            <div className="d5-bottom">
+                <div className="d5-bottom-left">
+                    <p className="d5-tagline">
+                        Steam requires 14 assets with exact pixel dimensions. Upload One Image and get every file, perfectly cropped, in 60 seconds.
+                    </p>
+                </div>
+                <WaitlistSection />
+            </div>
+            <SiteFooter />
         </div>
     );
 }

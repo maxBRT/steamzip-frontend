@@ -9,9 +9,8 @@ export function WaitlistSection() {
                     Join the<br /><span>Waitlist</span>
                 </div>
                 <div className="d5-signup-note">
-                    FIRST 100 SIGN-UPS<br />
-                    RECEIVE <span>50% OFF</span><br />
-                    AT LAUNCH
+                    EARLY ACCESS<br />
+                    MEMBERS GET <span>50% OFF</span>
                 </div>
             </div>
             <EmailForm />

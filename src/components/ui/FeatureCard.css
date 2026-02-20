@@ -1,18 +1,16 @@
 .d5-feat {
-    padding: 0 2rem 3rem 0;
+    padding: 2.5rem 2.5rem 2.5rem 0;
     border-bottom: 1.5px solid #E0E0E0;
-    margin-bottom: 2.5rem;
 }
 
 .d5-feat:nth-child(2n) {
-    padding-left: 2rem;
+    padding-left: 2.5rem;
     padding-right: 0;
     border-left: 1.5px solid #E0E0E0;
 }
 
 .d5-feat:nth-last-child(-n+2) {
     border-bottom: none;
-    margin-bottom: 0;
 }
 
 .d5-feat-num {
